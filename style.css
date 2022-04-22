@@ -1,0 +1,28 @@
+table, th, td {
+	text-align: center;
+}
+
+tr:nth-child(even) {background-color: #dbd7d2;}
+tr:hover{background-color: #90ee90;} 
+
+.metadata-button{
+	color: gray;
+}
+
+.metadata{
+ 	color:gray;
+	font-size: 50%;
+	max-width: 50px;
+}
+
+.invariant-missing{
+ 	color:red;
+}
+
+/* Sortable tables */
+table.sortable thead {
+    background-color: darkgray;
+    font-weight: bold;
+    cursor: default;
+}
+
