@@ -164,7 +164,7 @@ function update_button(cl) {
 """
 
 html += "<h1>Computations of \(\\boldsymbol{\\vartheta_c}\)</h1>"
-html += "<span class='metadata-button' id='metadata-all' onclick=\"toggleDisplayClass('metadata');\">show all metadata</span>"
+html += "<p class='button-wrapper'><span class='metadata-button' id='metadata-all' onclick=\"toggleDisplayClass('metadata');\">show all metadata</span></p>"
 
 html +="<table class=\"sortable\">"
 
@@ -176,13 +176,13 @@ def str2mathjax( string ):
     string = sub(r"rational","rat", string )
     return string
 
-html += "<tr>"
+html += "<thead><tr>"
 for col in columns:
     if col in ["hname","name","comment"]:
         html += "<th>" + str2mathjax(col) + "</th>\n" 
     else:
         html += "<th class=\"sorttable_numeric\">" + str2mathjax(col) + "</th>\n" 
-html += "</tr>\n"
+html += "</tr></thead>\n"
 
 def etype(entry):
     if isinstance( entry, str ):
@@ -202,8 +202,14 @@ def sortkey(entry, et):
         return str(-1000)
     return entry[0]
 
-def html_td( identifier, entry, et ):
-    html = "<td sorttable_customkey=\"" + sortkey(entry,et) + "\">"
+def colclass(col):
+    if col in ["name","hname","comment"]:
+        return col
+    return "invariant"
+
+def html_td( identifier, colclass, entry, et ):
+    html = "<td sorttable_customkey=\"" + sortkey(entry,et)\
+            + "\" class=\"" + colclass + "\">"
     if et == 0:
         html += entry
     elif et == 1:
@@ -217,21 +223,23 @@ def html_td( identifier, entry, et ):
         html += "</span>\n"
         html += "<div class='metadata' id='meta-" + identifier 
         html += "' style='display:none'>\n"
-        html += metadata
+        html += entry[1]
         html += "\n</div>\n"
         html += "<div class='invariants' id='" + identifier
         html += "' style='display:none'>\n"            
     html += "</td>\n\n"
     return html
 
+html += "<tbody>\n"
 for knot in database:
     html += "<tr>\n"
     for col in columns:
         identifier = knot.get("hname") + "_-_" + knot.get("name") + col
         entry = knot.get( col )
         et = etype(entry)
-        html += html_td(identifier, entry, et)
+        html += html_td(identifier, colclass(col), entry, et)
     html += "</tr>\n\n\n\n"
+html += "</tbody>\n"
 html += "</table>\n"
 html += "</body>\n"
 
