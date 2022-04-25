@@ -2,10 +2,12 @@
 
 import csv
 from re import sub
+import warnings
 
 # load database
 database=[]
-with open('data-test.csv', mode ='r') as file:
+warning_count = 0
+with open('data-test-2.csv', mode ='r') as file:
     csvFile = csv.reader(file,delimiter='\t')
     counter = 0
     for line in csvFile:
@@ -23,9 +25,11 @@ with open('data-test.csv', mode ='r') as file:
             value     = str(line[3])
             metadata  = str(line[4])
         elif len(line) != 0:
-            print("Warning: I could not read line "\
+            warnings.warn("I could not read line "\
                     + str(counter)\
-                    + ". I will ignore it and proceed.")
+                    + ". I will ignore it and proceed.",SyntaxWarning,2)
+            warning_count += 1
+            continue
         is_new = True
         for entry in database:
             if (entry["name"] == name and name != "" )\
@@ -38,17 +42,19 @@ with open('data-test.csv', mode ='r') as file:
                     entry["hname"] = hname
                 # check for inconsistent names and hnames    
                 if ( name != "" and entry["name"] != name ):
-                    print("Warning: The hname in line "\
+                    warnings.warn("The hname in line "\
                             + str(counter)\
                             + " already exists in the database,"\
                             + " but the corresponding name is different."\
-                            + " I will ignore the new name and proceed.")
+                            + " I will ignore the new name and proceed.",SyntaxWarning,2)
+                    warning_count += 1
                 if ( hname != "" and entry["hname"] != hname ):
-                    print("Warning: The name in line "\
+                    warnings.warn("The name in line "\
                             + str(counter)\
                             + " already exists in the database,"\
                             + " but the corresponding hname is different."\
-                            + "I will ignore the new hname and proceed.")
+                            + " I will ignore the new hname and proceed.",SyntaxWarning,2)
+                    warning_count += 1
                 if ( is_comment ):
                     if entry["comment"] == "":
                         entry["comment"] = (comment)
@@ -57,11 +63,18 @@ with open('data-test.csv', mode ='r') as file:
                 else:
                     if entry.get(invariant) == None:
                         entry[invariant] = [value, metadata]
+                    elif entry.get(invariant)[0] == value:
+                        if entry.get(invariant)[1] == "":
+                            entry[invariant] = [value, metadata]
+                        elif metadata != "":
+                            entry[invariant][1] += (", " + metadata)
+
                     else:
-                        print("Warning: The invariant " + invariant\
+                        warnings.warn("The invariant " + invariant\
                                 + " for the knot " + name +"/"+ hname\
                                 + " already exists in the database."\
-                                + " I will ignore the new value and proceed.")
+                                + " I will ignore the new value and proceed.",SyntaxWarning,2)
+                        warning_count += 1
         if ( is_new ):
             if ( is_comment ):
                 database.append(dict({
@@ -164,6 +177,8 @@ function update_button(cl) {
 """
 
 html += "<h1>Computations of \(\\boldsymbol{\\vartheta_c}\)</h1>"
+if warning_count != 0:
+    html += "<span style=\"color:red\">Warning! There were warnings when this file was generated! Please fix and compile again.</span>"
 html += "<p class='button-wrapper'><span class='metadata-button' id='metadata-all' onclick=\"toggleDisplayClass('metadata');\">show all metadata</span></p>"
 
 html +="<table class=\"sortable\">"
