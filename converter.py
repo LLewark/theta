@@ -4,10 +4,25 @@ import csv
 from re import sub
 import warnings
 
+import sys
+import os
+
+if (len(sys.argv) != 2):
+    print("Error: please provide as single parameter the name of the csv file that shall be converted.")
+    sys.exit(0)
+
+filename = sys.argv[1]
+
+if not os.path.isfile(filename):
+   print("File does not exist.")
+   sys.exit(0)
+
+
+
 # load database
 database=[]
 warning_count = 0
-with open('data-test-2.csv', mode ='r') as file:
+with open(filename, mode ='r') as file:
     csvFile = csv.reader(file,delimiter='\t')
     counter = 0
     for line in csvFile:
