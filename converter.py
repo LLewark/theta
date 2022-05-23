@@ -37,6 +37,9 @@ with open(filename, mode ='r') as file:
             invariant = str(line[1])
             value     = str(line[2])
             metadata  = str(line[3])
+            if (metadata) == "":
+               warnings.warn("Please add metadata to the invariant " + invariant\
+                  + " for the knot " + name + ".",SyntaxWarning,2)
         elif len(line) != 0:
             warnings.warn("I could not read line "\
                     + str(counter)\
@@ -54,13 +57,9 @@ with open(filename, mode ='r') as file:
                         entry["comment"] += (", " + comment)
                 else:
                     if entry.get(invariant) == None:
-                        entry[invariant] = [value, metadata]
+                        entry[invariant] = [value, [metadata]]
                     elif entry.get(invariant)[0] == value:
-                        if entry.get(invariant)[1] == "":
-                            entry[invariant] = [value, metadata]
-                        elif metadata != "":
-                            entry[invariant][1] += (", " + metadata)
-
+                        entry[invariant][1].append(metadata)
                     else:
                         warnings.warn("The invariant " + invariant\
                                 + " for the knot " + name\
@@ -75,7 +74,7 @@ with open(filename, mode ='r') as file:
             else:
                 database.append(dict({
                     "name": name, 
-                    invariant: [value,metadata],
+                    invariant: [value,[metadata]],
                     "comment": ""}))
 
 
@@ -87,13 +86,12 @@ for entry in database:
 columns = list(dict.fromkeys(columns))
 columns.sort()
 
-## make sure comments column is last and name column is first
+## make sure comments do not appear as a separate column and name column is first
 for header in ["comment","name"]:
     if header in columns:
         columns.remove(header)
 
 columns.insert(0,"name")
-columns.append("comment")
 
 ## compile html file
 html = """
@@ -104,73 +102,30 @@ html = """
 
 <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 <meta content="utf-8" http-equiv="encoding">
+<script type='text/javascript'>
+	function on(file) {
+	    document.getElementById("overlay").style.display = "block";
+	    document.getElementById("overlay_container").style.display = "block";
+            toggleDisplay(file);
+	}
 
-<script type='text/javascript'>
-function toggleDisplay(cl,id) {
-	if (document.getElementById(id).style.display == '') {
-		document.getElementById(id).style.display = 'none';
-	}
-	else {
-		document.getElementById(id).style.display = '';
-	}
-	update_button(cl);
-}
-</script>
-<script type='text/javascript'>
-function update_button(cl) {
-	var subtabs = document.getElementsByClassName(cl);
-	var expanded = true;
-	for (itD = 0; itD < subtabs.length; itD++) {
-		if (subtabs[itD].style.display=="none"){
-			expanded = false;
+	function off() {
+	    document.getElementById("overlay").style.display = "none";
+	    document.getElementById("overlay_container").style.display = "none";
+	} 
+        var list = document.getElementsByClassName("details");
+	function toggleDisplay(details) {
+		for (itD = 0; itD < list.length; itD++) {
+			list[itD].style.display="none";
 		}
+		document.getElementById(details).style.display = "";
 	}
-	if (expanded){
-		document.getElementById(cl+"-all").innerHTML = "hide all " + cl;
-	}
-	else {
-		document.getElementById(cl+"-all").innerHTML = "show all " + cl;
-	}
-}
 </script>
-<script type='text/javascript'>
-        function toggleDisplayClass(cl) {
-            	var subtabs = document.getElementsByClassName(cl);
-            	var expanded = true;
-          	for (itD = 0; itD < subtabs.length; itD++) {
-          		if (subtabs[itD].style.display=="none"){
-          			expanded = false;
-          		}
-          	}
-          	if (expanded){
-          		for (itD = 0; itD < subtabs.length; itD++) {
-          			subtabs[itD].style.display="none";
-          		}
-          	}
-          	else {
-          		for (itD = 0; itD < subtabs.length; itD++) {
-          			subtabs[itD].style.display="";
-          		}
-          	}
-          	update_button(cl);
-        }
-</script>
-
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script src="sorttable.js"></script>
 <!--- https://www.kryogenix.org/code/browser/sorttable/ --->
 
-</head>
-
-<body>
-"""
-
-html += "<h1>Computations of \(\\boldsymbol{\\vartheta_c}\)</h1>"
-if warning_count != 0:
-    html += "<span style=\"color:red\">Warning! There were warnings when this file was generated! Please fix and compile again.</span>"
-html += "<p class='button-wrapper'><span class='metadata-button' id='metadata-all' onclick=\"toggleDisplayClass('metadata');\">show all metadata</span></p>"
-
-html +="<table class=\"sortable\">"
+</head>"""
 
 def str2mathjax( string ):
     string = sub(r"theta_([0-9]*)",r"\\(\\boldsymbol{\\vartheta_{\1}}\\)", string)
@@ -178,14 +133,6 @@ def str2mathjax( string ):
     string = sub(r"comment","Comment", string )
     string = sub(r"rational","rat", string )
     return string
-
-html += "<thead><tr>"
-for col in columns:
-    if col in ["name","comment"]:
-        html += "<th>" + str2mathjax(col) + "</th>\n" 
-    else:
-        html += "<th class=\"sorttable_numeric\">" + str2mathjax(col) + "</th>\n" 
-html += "</tr></thead>\n"
 
 def etype(entry):
     if isinstance( entry, str ):
@@ -218,24 +165,86 @@ def html_td( identifier, colclass, entry, et ):
     elif et == 1:
         html += "—"
     else:
-        html += "\n<span\nonclick=\"toggleDisplay('metadata','meta-" + identifier + "');\" \n"
+        html += "\n<span\n"
         if et == 2:
             html += "class=\"invariant-missing\">\nX\n"
         else:
-            html += "title='click to show metadata'>\n" + entry[0] + "\n"
+            html += ">" + entry[0] + "\n"
         html += "</span>\n"
-        html += "<div class='metadata' id='meta-" + identifier 
-        html += "' style='display:none'>\n"
-        html += entry[1]
-        html += "\n</div>\n"
-        html += "<div class='invariants' id='" + identifier
-        html += "' style='display:none'>\n"            
     html += "</td>\n\n"
     return html
 
+def format_metadata( string ):
+    l = [ e.split(":") for e in string.split(";")]
+    html = ""
+    for e in l:
+        html += "<tr>\n"
+        if len(e) == 1:
+            html += "<td>comment</td><td>"
+            html += e[0]
+            html += "</td>"
+        elif len(e) == 2:
+            html += "<td>"
+            html += e[0]
+            html += "</td><td>"
+            html += e[1]
+            html += "</td>"
+        else:
+            warnings.warn("Some metadata is not formatted correctly. Please correct this!",SyntaxWarning,2)
+            warning_count += 1
+        html += "</tr>"
+    return html
+
+html += "<body>\n"
+html += "<div id=\"overlay\" onclick=\"off()\" style=\"display: none;\"></div>"
+html += "<div id=\"overlay_container\" style=\"display: none;\">"
+# details as overlay
+for knot in database:
+    html += "<div class=\"details\" id=\"details-" + knot.get("name") + "\" style='display:none'>\n"
+    html += "<h2>Details on " + knot.get("name") + "</h2>\n"
+    if knot.get("comment") != "":
+        html += "<h3>comments</h3>\n"
+        html += "<p>"+ knot.get("comment") + "</p>"
+#    else:
+#        html += "<div>—no comments—</div>"
+    html += "<h3>metadata</h3>\n"
+    for col in columns:
+        entry = knot.get( col )
+        if etype(entry) == 2:
+            html += "<h4>" + str2mathjax(col) + "= <span class='invariant-missing'>X</span></h4>\n"
+            html += "<table>"
+            for e in entry[1]:
+                html += format_metadata(e) + "\n"
+            html += "</table>"
+        if etype(entry) == 3:
+            html += "<h4>" + str2mathjax(col) + "=" + entry[0] + "</h4>\n"
+            html += "<table>"
+            for e in entry[1]:
+                html += format_metadata(e) + "\n"
+            html += "</table>"
+    html += "</table>\n"
+    html += "</div>\n"
+html += "</div>\n\n"
+
+# page title
+html += "<h1>Computations of \(\\boldsymbol{\\vartheta_c}\)</h1>"
+if warning_count != 0:
+    html += "<span style=\"color:red\">Warning! There were warnings when this file was generated! Please fix and compile again.</span>"
+
+# table head
+html +="<table class=\"sortable\">"
+html += "<thead><tr>"
+for col in columns:
+    if col in ["name","comment"]:
+        html += "<th>" + str2mathjax(col) + "</th>\n" 
+    else:
+        html += "<th class=\"sorttable_numeric\">" + str2mathjax(col) + "</th>\n" 
+html += "</tr></thead>\n"
+
+# table content
 html += "<tbody>\n"
 for knot in database:
-    html += "<tr>\n"
+    html += "<tr onClick=\"on('details-" + knot.get("name") + "')\">\n"
     for col in columns:
         identifier = knot.get("name") + col
         entry = knot.get( col )
