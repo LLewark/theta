@@ -28,17 +28,15 @@ with open(filename, mode ='r') as file:
     for line in csvFile:
         counter += 1
         is_comment = False
-        if len(line) == 3: # line contains a comment
+        if len(line) == 2: # line contains a comment
             name      = str(line[0])
-            hname     = str(line[1])
-            comment   = str(line[2])
+            comment   = str(line[1])
             is_comment = True
-        elif len(line) == 5: # line contains an invariant
+        elif len(line) == 4: # line contains an invariant
             name      = str(line[0])
-            hname     = str(line[1])
-            invariant = str(line[2])
-            value     = str(line[3])
-            metadata  = str(line[4])
+            invariant = str(line[1])
+            value     = str(line[2])
+            metadata  = str(line[3])
         elif len(line) != 0:
             warnings.warn("I could not read line "\
                     + str(counter)\
@@ -47,29 +45,8 @@ with open(filename, mode ='r') as file:
             continue
         is_new = True
         for entry in database:
-            if (entry["name"] == name and name != "" )\
-                    or ( entry["hname"] == hname and hname != "" ):
+            if entry["name"] == name:
                 is_new = False
-                # try to fill in entries that might be missing
-                if ( entry["name"] == ""):
-                    entry["name"] = name
-                if ( entry["hname"] == ""):
-                    entry["hname"] = hname
-                # check for inconsistent names and hnames    
-                if ( name != "" and entry["name"] != name ):
-                    warnings.warn("The hname in line "\
-                            + str(counter)\
-                            + " already exists in the database,"\
-                            + " but the corresponding name is different."\
-                            + " I will ignore the new name and proceed.",SyntaxWarning,2)
-                    warning_count += 1
-                if ( hname != "" and entry["hname"] != hname ):
-                    warnings.warn("The name in line "\
-                            + str(counter)\
-                            + " already exists in the database,"\
-                            + " but the corresponding hname is different."\
-                            + " I will ignore the new hname and proceed.",SyntaxWarning,2)
-                    warning_count += 1
                 if ( is_comment ):
                     if entry["comment"] == "":
                         entry["comment"] = (comment)
@@ -86,7 +63,7 @@ with open(filename, mode ='r') as file:
 
                     else:
                         warnings.warn("The invariant " + invariant\
-                                + " for the knot " + name +"/"+ hname\
+                                + " for the knot " + name\
                                 + " already exists in the database."\
                                 + " I will ignore the new value and proceed.",SyntaxWarning,2)
                         warning_count += 1
@@ -94,12 +71,10 @@ with open(filename, mode ='r') as file:
             if ( is_comment ):
                 database.append(dict({
                     "name": name, 
-                    "hname": hname, 
                     "comment": comment}))
             else:
                 database.append(dict({
                     "name": name, 
-                    "hname": hname, 
                     invariant: [value,metadata],
                     "comment": ""}))
 
@@ -112,13 +87,12 @@ for entry in database:
 columns = list(dict.fromkeys(columns))
 columns.sort()
 
-## make sure comments column is last and hname and name columns are first
-for header in ["comment","name","hname"]:
+## make sure comments column is last and name column is first
+for header in ["comment","name"]:
     if header in columns:
         columns.remove(header)
 
-columns.insert(0,"hname")
-columns.insert(1,"name")
+columns.insert(0,"name")
 columns.append("comment")
 
 ## compile html file
@@ -200,7 +174,6 @@ html +="<table class=\"sortable\">"
 
 def str2mathjax( string ):
     string = sub(r"theta_([0-9]*)",r"\\(\\boldsymbol{\\vartheta_{\1}}\\)", string)
-    string = sub(r"hname","", string )
     string = sub(r"name","Name", string )
     string = sub(r"comment","Comment", string )
     string = sub(r"rational","rat", string )
@@ -208,7 +181,7 @@ def str2mathjax( string ):
 
 html += "<thead><tr>"
 for col in columns:
-    if col in ["hname","name","comment"]:
+    if col in ["name","comment"]:
         html += "<th>" + str2mathjax(col) + "</th>\n" 
     else:
         html += "<th class=\"sorttable_numeric\">" + str2mathjax(col) + "</th>\n" 
@@ -233,7 +206,7 @@ def sortkey(entry, et):
     return entry[0]
 
 def colclass(col):
-    if col in ["name","hname","comment"]:
+    if col in ["name","comment"]:
         return col
     return "invariant"
 
@@ -264,7 +237,7 @@ html += "<tbody>\n"
 for knot in database:
     html += "<tr>\n"
     for col in columns:
-        identifier = knot.get("hname") + "_-_" + knot.get("name") + col
+        identifier = knot.get("name") + col
         entry = knot.get( col )
         et = etype(entry)
         html += html_td(identifier, colclass(col), entry, et)
