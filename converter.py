@@ -38,8 +38,9 @@ with open(filename, mode ='r') as file:
             value     = str(line[2])
             metadata  = str(line[3])
             if (metadata) == "":
-               warnings.warn("Please add metadata to the invariant " + invariant\
+               warnings.warn("Please add metadata (e.g. 'program', 'source', 'author', etc.) to the invariant " + invariant\
                   + " for the knot " + name + ".",SyntaxWarning,2)
+               warning_count += 1
         elif len(line) != 0:
             warnings.warn("I could not read line "\
                     + str(counter)\
@@ -158,7 +159,7 @@ def colclass(col):
     return "invariant"
 
 def html_td( identifier, colclass, entry, et ):
-    html = "<td sorttable_customkey=\"" + sortkey(entry,et)\
+    html = "<td title='click to view metadata and comments' sorttable_customkey=\"" + sortkey(entry,et)\
             + "\" class=\"" + colclass + "\">"
     if et == 0:
         html += entry
@@ -202,7 +203,7 @@ html += "<div id=\"overlay_container\" style=\"display: none;\">"
 # details as overlay
 for knot in database:
     html += "<div class=\"details\" id=\"details-" + knot.get("name") + "\" style='display:none'>\n"
-    html += "<h2>Details on " + knot.get("name") + "</h2>\n"
+    html += "<h2>" + knot.get("name") + "</h2>\n"
     if knot.get("comment") != "":
         html += "<h3>comments</h3>\n"
         html += "<p>"+ knot.get("comment") + "</p>"
@@ -223,7 +224,7 @@ for knot in database:
 html += "</div>\n\n"
 
 # page title
-html += "<h1>Computations of \(\\boldsymbol{\\vartheta_c}\)</h1>"
+html += "<h1>Table of \(\\boldsymbol{\\vartheta_c}\)-invariants</h1>"
 if warning_count != 0:
     html += "<span style=\"color:red\">Warning! There were warnings when this file was generated! Please fix and compile again.</span>"
 
