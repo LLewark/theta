@@ -176,7 +176,7 @@ def html_td( identifier, colclass, entry, et ):
 
 def format_metadata( string ):
     l = [ e.split(":") for e in string.split(";")]
-    html = ""
+    html = "<table class='table-metadata'>\n"
     for e in l:
         html += "<tr>\n"
         if len(e) == 1:
@@ -193,6 +193,7 @@ def format_metadata( string ):
             warnings.warn("Some metadata is not formatted correctly. Please correct this!",SyntaxWarning,2)
             warning_count += 1
         html += "</tr>"
+    html += "</table>\n"
     return html
 
 html += "<body>\n"
@@ -212,17 +213,12 @@ for knot in database:
         entry = knot.get( col )
         if etype(entry) == 2:
             html += "<h4>" + str2mathjax(col) + "= <span class='invariant-missing'>X</span></h4>\n"
-            html += "<table>"
             for e in entry[1]:
                 html += format_metadata(e) + "\n"
-            html += "</table>"
         if etype(entry) == 3:
             html += "<h4>" + str2mathjax(col) + "=" + entry[0] + "</h4>\n"
-            html += "<table>"
             for e in entry[1]:
                 html += format_metadata(e) + "\n"
-            html += "</table>"
-    html += "</table>\n"
     html += "</div>\n"
 html += "</div>\n\n"
 
