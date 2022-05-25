@@ -78,7 +78,8 @@ with open(filename, mode ='r') as file:
                     invariant: [value,[metadata]],
                     "comment": ""}))
 
-
+# sort database
+database = sorted(database, key=lambda d: d['name']) 
 
 # process database
 columns = []
