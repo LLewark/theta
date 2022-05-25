@@ -6,6 +6,16 @@ table, th, td {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+table {
+	border: 2px solid #dbd7d2;
+  	border-radius: 5px;
+}
+
+.table-metadata {
+  	width:80%;
 }
 
 tr:nth-child(even) {background-color: #dbd7d2;}
@@ -23,43 +33,6 @@ td.comment{
 	width: 180px;
 }
 
-.metadata-button{
-	background-color: #0095ff;
-	border: 1px solid transparent;
-	border-radius: 3px;
-	box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
-	box-sizing: border-box;
-	color: #fff;
-	cursor: pointer;
-	display: inline-block;
-	font-size: 80%;
-	margin: 0;
-	outline: none;
-	padding: 8px .8em;
-	position: relative;
-	text-align: center;
-	text-decoration: none;
-	user-select: none;
-	-webkit-user-select: none;
-	touch-action: manipulation;
-	vertical-align: baseline;
-	white-space: nowrap;
-}
-
-.metadata-button:hover,
-.metadata-button:focus {
-  background-color: #07c;
-}
-
-.metadata-button:focus {
-  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
-}
-
-.metadata-button:active {
-  background-color: #0064bd;
-  box-shadow: none;
-}
-
 .metadata{
  	color:gray;
 	font-size: 50%;
@@ -75,5 +48,45 @@ table.sortable thead {
     background-color: darkgray;
     font-weight: bold;
     cursor: default;
+}
+
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+  text-align:center;
+  vertical-align: middle;
+}
+
+#overlay_container{
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 60%;
+  height: 80%;
+  max-width:800px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255,255,255,1); 
+  z-index:3; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */\
+  text-align:center;
+  vertical-align: middle;
+  margin: auto;
+  overflow: scroll;
+  margin-top:100px;
+}
+#overlay_container:hover{
+	cursor: default;
 }
 
