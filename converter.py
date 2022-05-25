@@ -87,12 +87,31 @@ for entry in database:
 columns = list(dict.fromkeys(columns))
 columns.sort()
 
+predefined_cols = [
+        "name",
+        "pretzel",
+        "torus",
+        "theta_0",
+        "theta_2",
+        "theta_3",
+        "theta_5",
+        "theta_7",
+        "s_0",
+        "s_2",
+        "s_3",
+        "s_5",
+        "s_7"]
+
 ## make sure comments do not appear as a separate column and name column is first
-for header in ["comment","name"]:
+for header in ["comment"]:
     if header in columns:
         columns.remove(header)
+for header in columns:
+    if header not in predefined_cols:
+        predefined_cols.append(header)
+        warnings.warn("Dataset contains the unknown invariant '" + header + "'. Adding it as the last column in the table.",UserWarning,2)
 
-columns.insert(0,"name")
+columns = predefined_cols
 
 ## compile html file
 html = """
@@ -130,6 +149,7 @@ html = """
 
 def str2mathjax( string ):
     string = sub(r"theta_([0-9]*)",r"\\(\\boldsymbol{\\vartheta_{\1}}\\)", string)
+    string = sub(r"s_([0-9]*)",r"\\(\\boldsymbol{s_{\1}}\\)", string)
     string = sub(r"name","Name", string )
     string = sub(r"comment","Comment", string )
     string = sub(r"rational","rat", string )
