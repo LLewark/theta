@@ -97,7 +97,10 @@ predefined_cols = [
         "theta_3",
         "theta_5",
         "theta_7",
-        "s_2"]
+        "s_2",
+        "tau",
+        "epsilon",
+        "Genus-4D"]
 
 ## make sure comments do not appear as a separate column and name column is first
 for header in ["comment"]:
@@ -146,6 +149,8 @@ html = """
 
 def str2mathjax( string ):
     string = sub(r"theta_([0-9]*)",r"\\(\\boldsymbol{\\vartheta_{\1}}\\)", string)
+    string = sub(r"epsilon",r"\\(\\boldsymbol{\\varepsilon}\\)", string)
+    string = sub(r"tau",r"\\(\\boldsymbol{\\tau}\\)", string)
     string = sub(r"s_([0-9]*)",r"\\(\\boldsymbol{s_{\1}}\\)", string)
     string = sub(r"name","Name", string )
     string = sub(r"comment","Comment", string )
