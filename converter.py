@@ -97,11 +97,7 @@ predefined_cols = [
         "theta_3",
         "theta_5",
         "theta_7",
-        "s_0",
-        "s_2",
-        "s_3",
-        "s_5",
-        "s_7"]
+        "s_2"]
 
 ## make sure comments do not appear as a separate column and name column is first
 for header in ["comment"]:
@@ -179,11 +175,13 @@ def colclass(col):
         return col
     return "invariant"
 
-def html_td( identifier, colclass, entry, et ):
+def html_td( identifier, colclass, entry, et, commenttrue):
     html = "<td title='click to view metadata and comments' sorttable_customkey=\"" + sortkey(entry,et)\
             + "\" class=\"" + colclass + "\">"
     if et == 0:
         html += entry
+        if commenttrue:
+            html += "ᶜ"
     elif et == 1:
         html += "—"
     else:
@@ -266,8 +264,9 @@ for knot in database:
     for col in columns:
         identifier = knot.get("name") + col
         entry = knot.get( col )
+        commenttrue = (knot.get( "comment" ) != "")
         et = etype(entry)
-        html += html_td(identifier, colclass(col), entry, et)
+        html += html_td(identifier, colclass(col), entry, et, commenttrue)
     html += "</tr>\n\n\n\n"
 html += "</tbody>\n"
 html += "</table>\n"
