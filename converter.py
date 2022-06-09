@@ -253,6 +253,7 @@ if warning_count != 0:
     html += "<span style=\"color:red\">Warning! There were warnings when this file was generated! Please fix and compile again.</span>"
 
 # table head
+html += "<div class='fixHead'>\n\n"
 html +="<table class=\"sortable\">"
 html += "<thead><tr>"
 for col in columns:
@@ -261,6 +262,13 @@ for col in columns:
     else:
         html += "<th class=\"sorttable_numeric\">" + str2mathjax(col) + "</th>\n" 
 html += "</tr></thead>\n"
+
+# some info text
+html += """
+<p>
+The raw data from which this table was compiled can be found on <a href="https://github.com/LLewark/theta">github</a> (<a href='https://github.com/LLewark/theta/blob/master/""" + filename + "'>" + filename + """</a>).
+</p>
+"""
 
 # table content
 html += "<tbody>\n"
@@ -275,6 +283,7 @@ for knot in database:
     html += "</tr>\n\n\n\n"
 html += "</tbody>\n"
 html += "</table>\n"
+html += "</div>\n"
 html += "</body>\n"
 
 print(html)
