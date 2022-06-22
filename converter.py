@@ -188,7 +188,7 @@ def html_td( identifier, colclass, entry, et, commenttrue):
         if commenttrue:
             html += "ᶜ"
     elif et == 1:
-        html += "—"
+        html += ""
     else:
         html += "\n<span\n"
         if et == 2:
