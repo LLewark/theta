@@ -42,7 +42,7 @@ The values for the ϑ<sub>c</sub>-invariants were computed using the following t
 - [kht++](https://cbz20.raspberryip.com/code/khtpp/docs/index.html), a program for calculating the Khovanov and Bar-Natan homology of links and tangles, written by C. Zibrowius.  
   _Details for computations done with this program are available [here](https://cbz20.raspberryip.com/code/khtpp/examples/RasmussenSOfSatellites.html)._
 
-The values of some other invariants, such as the τ invariant and the slice genus, were scrapped from knotinfo:
+The values of some other invariants, such as the τ invariant and the slice genus, were scraped from knotinfo:
 
 > C. Livingston and A. H. Moore, [_KnotInfo_: Table of Knot Invariants](https://knotinfo.math.indiana.edu) 
 
