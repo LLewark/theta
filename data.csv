@@ -2274,3 +2274,22 @@ P(7,7,-6)	Genus-4D	7	reason:lower bound given by tau, upper bound for g_4(P(p,q,
 12n_0475	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
 12n_0522	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
 12n_0725	sigma	-8	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+14n_06004	sigma	6  	program:snappy
+14n_06006	sigma	6  	program:snappy
+14n_06022	sigma	-10	program:snappy
+14n_21316	sigma	2  	program:snappy
+14n_21318	sigma	2  	program:snappy
+14n_21324	sigma	-10	program:snappy
+14n_24552	sigma	-10	program:snappy
+14n_24553	sigma	0  	program:snappy
+15n_113775	sigma	0  	program:snappy
+16n_0771163	sigma	-4 	program:snappy
+16n_0864354	sigma	-12	program:snappy
+16n_0996934	sigma	-12	program:snappy
+P(11,9,-5)	sigma	0  	program:snappy
+P(7,7,-6)	sigma	-14	program:snappy
+14n_21881	sigma	-8	program:snappy
+16n_0783154	sigma	-10	program:snappy
+T(3,10)	sigma	-14	program:snappy
+T(3,11)	sigma	-16	program:snappy
+15n_041185	sigma	-8	program:snappy
