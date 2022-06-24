@@ -1903,3 +1903,396 @@ P(7,7,-6)	s_2	14	program:khoca;input:PD[X[39,13,0,12],X[11,39,12,38],X[37,11,38,
 16n_0996934	Genus-4D	7	reason:lower bound given by tau, upper bound for g_4(P(p,q,2r)) with p,q odd given by |p+q|
 P(11,9,-5)	Genus-4D	1	reason:lower bound given by tau, upper bound 1 since g(P(p,q,r)) = 1 if p,q,r odd
 P(7,7,-6)	Genus-4D	7	reason:lower bound given by tau, upper bound for g_4(P(p,q,2r)) with p,q odd given by |p+q|
+08_16	theta_0	-3	program:khoca;calculation #:400;input:braid [-1,-1,2,-1,-1,2,-1,2]
+08_16	theta_2	-4	program:khoca;calculation #:400;input:braid [-1,-1,2,-1,-1,2,-1,2]
+08_16	theta_3	-3	program:khoca;calculation #:400;input:braid [-1,-1,2,-1,-1,2,-1,2]
+08_16	theta_5	-3	program:khoca;calculation #:400;input:braid [-1,-1,2,-1,-1,2,-1,2]
+08_16	theta_7	-3	program:khoca;calculation #:400;input:braid [-1,-1,2,-1,-1,2,-1,2]
+08_21	theta_0	3	program:khoca;calculation #:400;input:braid [1,1,1,2,-1,-1,2,2]
+08_21	theta_2	4	program:khoca;calculation #:400;input:braid [1,1,1,2,-1,-1,2,2]
+08_21	theta_3	3	program:khoca;calculation #:400;input:braid [1,1,1,2,-1,-1,2,2]
+08_21	theta_5	3	program:khoca;calculation #:400;input:braid [1,1,1,2,-1,-1,2,2]
+08_21	theta_7	3	program:khoca;calculation #:400;input:braid [1,1,1,2,-1,-1,2,2]
+09_01	theta_0	12	program:khoca;calculation #:400;input:braid [1,1,1,1,1,1,1,1,1]
+09_01	theta_2	16	program:khoca;calculation #:400;input:braid [1,1,1,1,1,1,1,1,1]
+09_01	theta_3	12	program:khoca;calculation #:400;input:braid [1,1,1,1,1,1,1,1,1]
+09_01	theta_5	12	program:khoca;calculation #:400;input:braid [1,1,1,1,1,1,1,1,1]
+09_01	theta_7	12	program:khoca;calculation #:400;input:braid [1,1,1,1,1,1,1,1,1]
+09_02	theta_0	3	program:khoca;calculation #:400;input:braid [1,1,1,2,-1,2,3,-2,3,4,-3,4]
+09_02	theta_2	4	program:khoca;calculation #:400;input:braid [1,1,1,2,-1,2,3,-2,3,4,-3,4]
+09_02	theta_3	3	program:khoca;calculation #:400;input:braid [1,1,1,2,-1,2,3,-2,3,4,-3,4]
+09_02	theta_5	3	program:khoca;calculation #:400;input:braid [1,1,1,2,-1,2,3,-2,3,4,-3,4]
+09_02	theta_7	3	program:khoca;calculation #:400;input:braid [1,1,1,2,-1,2,3,-2,3,4,-3,4]
+09_03	theta_0	9	program:khoca;calculation #:400;input:braid [1,1,1,1,1,1,1,2,-1,2]
+09_03	theta_2	12	program:khoca;calculation #:400;input:braid [1,1,1,1,1,1,1,2,-1,2]
+09_03	theta_3	9	program:khoca;calculation #:400;input:braid [1,1,1,1,1,1,1,2,-1,2]
+09_03	theta_5	9	program:khoca;calculation #:400;input:braid [1,1,1,1,1,1,1,2,-1,2]
+09_03	theta_7	9	program:khoca;calculation #:400;input:braid [1,1,1,1,1,1,1,2,-1,2]
+09_04	theta_0	6	program:khoca;calculation #:400;input:braid [1,1,1,1,1,2,-1,2,3,-2,3]
+09_04	theta_2	8	program:khoca;calculation #:400;input:braid [1,1,1,1,1,2,-1,2,3,-2,3]
+09_04	theta_3	6	program:khoca;calculation #:400;input:braid [1,1,1,1,1,2,-1,2,3,-2,3]
+09_04	theta_5	6	program:khoca;calculation #:400;input:braid [1,1,1,1,1,2,-1,2,3,-2,3]
+09_04	theta_7	6	program:khoca;calculation #:400;input:braid [1,1,1,1,1,2,-1,2,3,-2,3]
+09_05	theta_0	3	program:khoca;calculation #:400;input:braid [1,1,2,-1,2,2,3,-2,3,4,-3,4]
+09_05	theta_2	4	program:khoca;calculation #:400;input:braid [1,1,2,-1,2,2,3,-2,3,4,-3,4]
+09_05	theta_3	3	program:khoca;calculation #:400;input:braid [1,1,2,-1,2,2,3,-2,3,4,-3,4]
+09_05	theta_5	3	program:khoca;calculation #:400;input:braid [1,1,2,-1,2,2,3,-2,3,4,-3,4]
+09_05	theta_7	3	program:khoca;calculation #:400;input:braid [1,1,2,-1,2,2,3,-2,3,4,-3,4]
+09_06	theta_0	9	program:khoca;calculation #:400;input:braid [1,1,1,1,1,1,2,-1,2,2]
+09_06	theta_2	12	program:khoca;calculation #:400;input:braid [1,1,1,1,1,1,2,-1,2,2]
+09_06	theta_3	9	program:khoca;calculation #:400;input:braid [1,1,1,1,1,1,2,-1,2,2]
+09_06	theta_5	9	program:khoca;calculation #:400;input:braid [1,1,1,1,1,1,2,-1,2,2]
+09_06	theta_7	9	program:khoca;calculation #:400;input:braid [1,1,1,1,1,1,2,-1,2,2]
+09_07	theta_0	6	program:khoca;calculation #:400;input:braid [1,1,1,1,2,-1,2,3,-2,3,3]
+09_07	theta_2	8	program:khoca;calculation #:400;input:braid [1,1,1,1,2,-1,2,3,-2,3,3]
+09_07	theta_3	6	program:khoca;calculation #:400;input:braid [1,1,1,1,2,-1,2,3,-2,3,3]
+09_07	theta_5	6	program:khoca;calculation #:400;input:braid [1,1,1,1,2,-1,2,3,-2,3,3]
+09_07	theta_7	6	program:khoca;calculation #:400;input:braid [1,1,1,1,2,-1,2,3,-2,3,3]
+09_09	theta_0	9	program:khoca;calculation #:400;input:braid [1,1,1,1,1,2,-1,2,2,2]
+09_09	theta_2	12	program:khoca;calculation #:400;input:braid [1,1,1,1,1,2,-1,2,2,2]
+09_09	theta_3	9	program:khoca;calculation #:400;input:braid [1,1,1,1,1,2,-1,2,2,2]
+09_09	theta_5	9	program:khoca;calculation #:400;input:braid [1,1,1,1,1,2,-1,2,2,2]
+09_09	theta_7	9	program:khoca;calculation #:400;input:braid [1,1,1,1,1,2,-1,2,2,2]
+09_10	theta_0	6	program:khoca;calculation #:400;input:braid [1,1,2,-1,2,2,2,2,3,-2,3]
+09_10	theta_2	8	program:khoca;calculation #:400;input:braid [1,1,2,-1,2,2,2,2,3,-2,3]
+09_10	theta_3	6	program:khoca;calculation #:400;input:braid [1,1,2,-1,2,2,2,2,3,-2,3]
+09_10	theta_5	6	program:khoca;calculation #:400;input:braid [1,1,2,-1,2,2,2,2,3,-2,3]
+09_10	theta_7	6	program:khoca;calculation #:400;input:braid [1,1,2,-1,2,2,2,2,3,-2,3]
+09_11	theta_0	-6	program:khoca;calculation #:400;input:braid [-1,-1,-1,-1,2,-1,-3,2,-3]
+09_11	theta_2	-8	program:khoca;calculation #:400;input:braid [-1,-1,-1,-1,2,-1,-3,2,-3]
+09_11	theta_3	-6	program:khoca;calculation #:400;input:braid [-1,-1,-1,-1,2,-1,-3,2,-3]
+09_11	theta_5	-6	program:khoca;calculation #:400;input:braid [-1,-1,-1,-1,2,-1,-3,2,-3]
+09_11	theta_7	-6	program:khoca;calculation #:400;input:braid [-1,-1,-1,-1,2,-1,-3,2,-3]
+09_12	theta_0	3	program:khoca;calculation #:400;input:braid [1,1,-2,1,3,-2,3,4,-3,4]
+09_12	theta_2	4	program:khoca;calculation #:400;input:braid [1,1,-2,1,3,-2,3,4,-3,4]
+09_12	theta_3	3	program:khoca;calculation #:400;input:braid [1,1,-2,1,3,-2,3,4,-3,4]
+09_12	theta_5	3	program:khoca;calculation #:400;input:braid [1,1,-2,1,3,-2,3,4,-3,4]
+09_12	theta_7	3	program:khoca;calculation #:400;input:braid [1,1,-2,1,3,-2,3,4,-3,4]
+09_13	theta_0	6	program:khoca;calculation #:400;input:braid [1,1,1,1,2,-1,2,2,3,-2,3]
+09_13	theta_2	8	program:khoca;calculation #:400;input:braid [1,1,1,1,2,-1,2,2,3,-2,3]
+09_13	theta_3	6	program:khoca;calculation #:400;input:braid [1,1,1,1,2,-1,2,2,3,-2,3]
+09_13	theta_5	6	program:khoca;calculation #:400;input:braid [1,1,1,1,2,-1,2,2,3,-2,3]
+09_13	theta_7	6	program:khoca;calculation #:400;input:braid [1,1,1,1,2,-1,2,2,3,-2,3]
+09_42	theta_0	0	program:khoca;calculation #:400;input:braid [-1,-1,-1,2,1,1,-3,2,-3]
+09_42	theta_2	0	program:khoca;calculation #:400;input:braid [-1,-1,-1,2,1,1,-3,2,-3]
+09_42	theta_3	0	program:khoca;calculation #:400;input:braid [-1,-1,-1,2,1,1,-3,2,-3]
+09_42	theta_5	0	program:khoca;calculation #:400;input:braid [-1,-1,-1,2,1,1,-3,2,-3]
+09_42	theta_7	0	program:khoca;calculation #:400;input:braid [-1,-1,-1,2,1,1,-3,2,-3]
+09_45	theta_0	-3	program:khoca;calculation #:400;input:braid [-1,-1,-2,1,-2,-1,-3,2,-3]
+09_45	theta_2	-4	program:khoca;calculation #:400;input:braid [-1,-1,-2,1,-2,-1,-3,2,-3]
+09_45	theta_3	-3	program:khoca;calculation #:400;input:braid [-1,-1,-2,1,-2,-1,-3,2,-3]
+09_45	theta_5	-3	program:khoca;calculation #:400;input:braid [-1,-1,-2,1,-2,-1,-3,2,-3]
+09_45	theta_7	-3	program:khoca;calculation #:400;input:braid [-1,-1,-2,1,-2,-1,-3,2,-3]
+09_47	theta_0	3	program:khoca;calculation #:400;input:braid [-1,2,-1,2,3,2,-1,2,3]
+09_47	theta_2	4	program:khoca;calculation #:400;input:braid [-1,2,-1,2,3,2,-1,2,3]
+09_47	theta_3	3	program:khoca;calculation #:400;input:braid [-1,2,-1,2,3,2,-1,2,3]
+09_47	theta_5	3	program:khoca;calculation #:400;input:braid [-1,2,-1,2,3,2,-1,2,3]
+09_47	theta_7	3	program:khoca;calculation #:400;input:braid [-1,2,-1,2,3,2,-1,2,3]
+10_154	theta_0	8	program:khoca;calculation #:400;input:braid [1,1,2,-1,2,1,3,2,2,2,3]
+10_154	theta_2	8	program:khoca;calculation #:400;input:braid [1,1,2,-1,2,1,3,2,2,2,3]
+10_154	theta_3	9	program:khoca;calculation #:400;input:braid [1,1,2,-1,2,1,3,2,2,2,3]
+10_154	theta_5	8	program:khoca;calculation #:400;input:braid [1,1,2,-1,2,1,3,2,2,2,3]
+10_154	theta_7	8	program:khoca;calculation #:400;input:braid [1,1,2,-1,2,1,3,2,2,2,3]
+10_160	theta_0	6	program:khoca;calculation #:400;input:braid [1,1,1,2,1,1,-3,2,-1,2,-3]
+10_160	theta_2	8	program:khoca;calculation #:400;input:braid [1,1,1,2,1,1,-3,2,-1,2,-3]
+10_160	theta_3	6	program:khoca;calculation #:400;input:braid [1,1,1,2,1,1,-3,2,-1,2,-3]
+10_160	theta_5	6	program:khoca;calculation #:400;input:braid [1,1,1,2,1,1,-3,2,-1,2,-3]
+10_160	theta_7	6	program:khoca;calculation #:400;input:braid [1,1,1,2,1,1,-3,2,-1,2,-3]
+10_161	theta_0	8	program:khoca;calculation #:400;input:braid [1,1,1,2,-1,2,1,1,2,2]
+10_161	theta_2	8	program:khoca;calculation #:400;input:braid [1,1,1,2,-1,2,1,1,2,2]
+10_161	theta_3	9	program:khoca;calculation #:400;input:braid [1,1,1,2,-1,2,1,1,2,2]
+10_161	theta_5	8	program:khoca;calculation #:400;input:braid [1,1,1,2,-1,2,1,1,2,2]
+10_161	theta_7	8	program:khoca;calculation #:400;input:braid [1,1,1,2,-1,2,1,1,2,2]
+10_162	theta_2	-4	program:khoca;calculation #:400;input:braid [-1,-1,-2,1,1,-2,-2,-1,3,-2,3]
+10_162	theta_3	-3	program:khoca;calculation #:400;input:braid [-1,-1,-2,1,1,-2,-2,-1,3,-2,3]
+10_162	theta_5	-3	program:khoca;calculation #:400;input:braid [-1,-1,-2,1,1,-2,-2,-1,3,-2,3]
+10_163	theta_2	4	program:khoca;calculation #:400;input:braid [1,1,-2,-1,-1,3,2,-1,2,2,3]
+10_163	theta_3	3	program:khoca;calculation #:400;input:braid [1,1,-2,-1,-1,3,2,-1,2,2,3]
+10_163	theta_5	3	program:khoca;calculation #:400;input:braid [1,1,-2,-1,-1,3,2,-1,2,2,3]
+10_164	theta_2	0	program:khoca;calculation #:400;input:braid [1,1,-2,1,-2,-2,-3,2,-1,2,-3]
+10_164	theta_3	0	program:khoca;calculation #:400;input:braid [1,1,-2,1,-2,-2,-3,2,-1,2,-3]
+10_165	theta_2	-4	program:khoca;calculation #:400;input:braid [-1,-1,-2,1,3,-2,1,-2,-3,-3,-2]
+11n_077	theta_2	12	program:khoca;calculation #:122;input:braid [1,1,2,2,1,3,2,2,2,3,3]
+11n_077	tau	4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+11n_077	Genus-4D	4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+11n_077	s_2	8	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+11n_077	epsilon	1	source:knotinfo (using s_0=s_2 up to 13 crossings);date:23 June 2022;scraped by:Lukas Lewark
+03_1	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+04_1	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+05_1	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+05_2	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+06_1	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+06_2	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+06_3	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+07_1	sigma	-6	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+07_2	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+07_3	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+07_4	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+07_5	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+07_6	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+07_7	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+08_01	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+08_02	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+08_03	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+08_04	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+08_05	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+08_06	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+08_07	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+08_08	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+08_09	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+08_10	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+08_11	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+08_12	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+08_13	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+08_14	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+08_15	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+08_16	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+08_17	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+08_18	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+08_19	sigma	-6	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+08_20	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+08_21	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_01	sigma	-8	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_02	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_03	sigma	-6	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_04	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_05	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_06	sigma	-6	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_07	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_08	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_09	sigma	-6	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_10	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_11	sigma	4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_12	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_13	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_14	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_15	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_16	sigma	-6	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_17	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_18	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_19	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_20	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_21	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_22	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_23	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_24	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_25	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_26	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_27	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_28	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_29	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_30	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_31	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_32	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_33	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_34	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_35	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_36	sigma	4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_37	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_38	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_39	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_40	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_41	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_42	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_43	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_44	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_45	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_46	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_47	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_48	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+09_49	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_001	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_002	sigma	-6	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_003	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_004	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_005	sigma	4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_006	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_007	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_008	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_009	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_010	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_011	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_012	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_013	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_014	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_015	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_016	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_017	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_018	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_019	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_020	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_021	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_022	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_023	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_024	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_025	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_026	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_027	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_028	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_029	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_030	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_031	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_032	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_033	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_034	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_035	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_036	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_037	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_038	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_039	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_040	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_041	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_042	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_043	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_044	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_045	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_046	sigma	-6	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_047	sigma	4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_048	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_049	sigma	-6	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_050	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_051	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_052	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_053	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_054	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_055	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_056	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_057	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_058	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_059	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_060	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_061	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_062	sigma	4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_063	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_064	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_065	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_066	sigma	-6	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_067	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_068	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_069	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_070	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_071	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_072	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_073	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_074	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_075	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_076	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_077	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_078	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_079	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_080	sigma	-6	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_081	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_082	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_083	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_084	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_085	sigma	4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_086	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_087	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_088	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_089	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_090	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_091	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_092	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_093	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_094	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_095	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_096	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_097	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_098	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_099	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_100	sigma	4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_101	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_102	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_103	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_104	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_105	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_106	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_107	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_108	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_109	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_110	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_111	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_112	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_113	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_114	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_115	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_116	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_117	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_118	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_119	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_120	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_121	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_122	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_123	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_124	sigma	-8	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_125	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_126	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_127	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_128	sigma	-6	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_129	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_130	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_131	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_132	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_133	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_134	sigma	-6	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_135	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_136	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_137	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_138	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_139	sigma	-6	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_140	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_141	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_142	sigma	-6	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_143	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_144	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_145	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_146	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_147	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_148	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_149	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_150	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_151	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_152	sigma	-6	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_153	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_154	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_155	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_156	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_157	sigma	4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_158	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_159	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_160	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_161	sigma	-4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_162	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_163	sigma	-2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_164	sigma	0	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+10_165	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+11n_077	sigma	-6	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+12n_0233	sigma	4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+12n_0235	sigma	4	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+12n_0242	sigma	-8	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+12n_0474	sigma	-8	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+12n_0475	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+12n_0522	sigma	2	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+12n_0725	sigma	-8	source:knotinfo;date:23 June 2022;scraped by:Lukas Lewark
+14n_06004	sigma	6  	program:snappy
+14n_06006	sigma	6  	program:snappy
+14n_06022	sigma	-10	program:snappy
+14n_21316	sigma	2  	program:snappy
+14n_21318	sigma	2  	program:snappy
+14n_21324	sigma	-10	program:snappy
+14n_24552	sigma	-10	program:snappy
+14n_24553	sigma	0  	program:snappy
+15n_113775	sigma	0  	program:snappy
+16n_0771163	sigma	-4 	program:snappy
+16n_0864354	sigma	-12	program:snappy
+16n_0996934	sigma	-12	program:snappy
+P(11,9,-5)	sigma	0  	program:snappy
+P(7,7,-6)	sigma	-14	program:snappy
+14n_21881	sigma	-8	program:snappy
+16n_0783154	sigma	-10	program:snappy
+T(3,10)	sigma	-14	program:snappy
+T(3,11)	sigma	-16	program:snappy
+15n_041185	sigma	-8	program:snappy
+11n_077	theta_3	12	program:khoca;calculation #:122;input:braid [1,1,2,2,1,3,2,2,2,3,3]
+11n_077	theta_5	11	program:khoca;calculation #:122;input:braid [1,1,2,2,1,3,2,2,2,3,3]
+15n_041185	theta_3	15	program:khoca;calculation #:123;input:braid [1 2 3 1 2 3 1 2 3 1 2 3 1 2 3]
