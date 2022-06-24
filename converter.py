@@ -3,6 +3,7 @@
 import csv
 from re import sub
 import warnings
+import csv
 
 import sys
 import os
@@ -221,6 +222,12 @@ def format_metadata( string ):
     html += "</table>\n"
     return html
 
+def invariant_only( entry ):
+    if etype( entry ) == 3:
+        return entry[0]
+    else: 
+        return ""
+
 html += "<body>\n"
 html += "<div id=\"overlay\" onclick=\"off()\" style=\"display: none;\"></div>"
 html += "<div id=\"overlay_container\" style=\"display: none;\">"
@@ -268,12 +275,20 @@ html += """
 <p>
 The raw data from which this table was compiled can be found on <a href="https://github.com/LLewark/theta">github</a> (<a href='https://github.com/LLewark/theta/blob/master/""" + filename + "'>" + filename + """</a>).
 </p>
+<p>
+You can download a csv-file of this table <a href='https://github.com/LLewark/theta/blob/master/""" + filename.split(".")[0] + """-invariants-only.csv'>here</a>.
+</p>
 """
+
+csv_output = open(filename.split(".")[0] + '-invariants-only.csv', 'w')
+writer = csv.writer(csv_output)
+writer.writerow( ["name"] + [col for col in columns] )
 
 # table content
 html += "<tbody>\n"
 for knot in database:
     html += "<tr onClick=\"on('details-" + knot.get("name") + "')\">\n"
+    writer.writerow( [knot.get("name")] + [invariant_only( knot.get( col ) ) for col in columns] )
     for col in columns:
         identifier = knot.get("name") + col
         entry = knot.get( col )
