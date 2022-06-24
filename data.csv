@@ -2293,3 +2293,6 @@ P(7,7,-6)	sigma	-14	program:snappy
 T(3,10)	sigma	-14	program:snappy
 T(3,11)	sigma	-16	program:snappy
 15n_041185	sigma	-8	program:snappy
+11n_077	theta_3	12	program:khoca;calculation #:122;input:braid [1,1,2,2,1,3,2,2,2,3,3]
+11n_077	theta_5	11	program:khoca;calculation #:122;input:braid [1,1,2,2,1,3,2,2,2,3,3]
+15n_041185	theta_3	15	program:khoca;calculation #:123;input:braid [1 2 3 1 2 3 1 2 3 1 2 3 1 2 3]
