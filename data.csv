@@ -1428,7 +1428,7 @@ P(11,9,-5)	theta_2	4	program:khoca;calculation #:92,106
 10_150	theta_7	6	program:khoca;calculation #:310;input:braid [1 1 1 -2 1 1 3 -2 -1 3 2]
 15n_041185	theta_2	16	program:khoca;calculation #:118;input:braid [1 2 3 1 2 3 1 2 3 1 2 3 1 2 3]
 03_1	theta_c = theta_0 for all c between 3 and 97, as computed with khoca, calculation #118
-08_19	theta_c = theta_0 for all c between 3 and 97, as computed with khoca, calculation #118
+08_19	theta_c = theta_0 for all c≠3 between 2 and 97, as computed with khoca, calculation #118
 10_129	theta_0	0	reason:slice knots have theta_c = 0
 10_129	theta_2	0	reason:slice knots have theta_c = 0
 10_129	theta_3	0	reason:slice knots have theta_c = 0
