@@ -142,6 +142,28 @@ html = """
 		}
 		document.getElementById(details).style.display = "";
 	}
+        function updateColButton(col_no){
+            var tbl = document.getElementById('invarianttable');
+            var button = document.getElementById('colbutton' + col_no);
+            var col = tbl.getElementsByTagName('col')[col_no];
+                if (col.style.visibility==\"\"){
+                    button.style.backgroundColor=\"GreenYellow\";
+                }
+                else {
+                    button.style.backgroundColor=\"LightPink\";
+                }
+        }
+        function toggleColumn(col_no) {
+            var tbl = document.getElementById('invarianttable');
+            var col = tbl.getElementsByTagName('col')[col_no];
+                if (col.style.visibility==\"\"){
+                    col.style.visibility=\"collapse\";
+                }
+                else {
+                    col.style.visibility=\"\";
+                }
+            updateColButton(col_no);
+        }
 </script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script src="sorttable.js"></script>
@@ -261,17 +283,6 @@ html += "<h1>Table of \(\\boldsymbol{\\vartheta_c}\)-invariants</h1>"
 if warning_count != 0:
     html += "<span style=\"color:red\">Warning! There were warnings when this file was generated! Please fix and compile again.</span>"
 
-# table head
-html += "<div class='fixHead'>\n\n"
-html +="<table class=\"sortable\">"
-html += "<thead><tr>"
-for col in columns:
-    if col in ["name","comment"]:
-        html += "<th>" + str2mathjax(col) + "</th>\n" 
-    else:
-        html += "<th class=\"sorttable_numeric\">" + str2mathjax(col) + "</th>\n" 
-html += "</tr></thead>\n"
-
 # some info text
 html += """
 <p>
@@ -281,6 +292,29 @@ The raw data from which this table was compiled can be found on <a href="https:/
 You can download a csv-file of this table <a href='https://github.com/LLewark/theta/blob/master/""" + filename.split(".")[0] + """-invariants-only.csv'>here</a>.
 </p>
 """
+
+# table head
+html += "<div class='fixHead'>\n\n"
+html +="<table id=\"invarianttable\" class=\"sortable\">\n"
+html +="<colgroup>\n"
+for index,col in enumerate(columns):
+    html += "<col class=\"col" + str(index) + "\">\n"
+html +="</colgroup>\n"
+html += "<thead><tr>"
+for col in columns:
+    if col in ["name","comment"]:
+        html += "<th>" + str2mathjax(col) + "</th>\n" 
+    else:
+        html += "<th class=\"sorttable_numeric\">" + str2mathjax(col) + "</th>\n" 
+html += "</tr></thead>\n"
+
+# column selector
+html += "<p>\n"
+for index, col in enumerate(columns[1:]):
+    html += "<button id=\"colbutton" + str(index+1) + "\" type=\"button\" onclick=\"toggleColumn(" + str(index+1) + ")\">"
+    html += str2mathjax(col)
+    html += "</button>\n\n"
+html += "</p>\n\n"
 
 csv_output = open(filename.split(".")[0] + '-invariants-only.csv', 'w')
 writer = csv.writer(csv_output)

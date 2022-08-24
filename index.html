@@ -24,6 +24,28 @@
 		}
 		document.getElementById(details).style.display = "";
 	}
+        function updateColButton(col_no){
+            var tbl = document.getElementById('invarianttable');
+            var button = document.getElementById('colbutton' + col_no);
+            var col = tbl.getElementsByTagName('col')[col_no];
+                if (col.style.visibility==""){
+                    button.style.backgroundColor="GreenYellow";
+                }
+                else {
+                    button.style.backgroundColor="LightPink";
+                }
+        }
+        function toggleColumn(col_no) {
+            var tbl = document.getElementById('invarianttable');
+            var col = tbl.getElementsByTagName('col')[col_no];
+                if (col.style.visibility==""){
+                    col.style.visibility="collapse";
+                }
+                else {
+                    col.style.visibility="";
+                }
+            updateColButton(col_no);
+        }
 </script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script src="sorttable.js"></script>
@@ -16679,9 +16701,32 @@
 </div>
 </div>
 
-<h1>Table of \(\boldsymbol{\vartheta_c}\)-invariants</h1><div class='fixHead'>
+<h1>Table of \(\boldsymbol{\vartheta_c}\)-invariants</h1>
+<p>
+The raw data from which this table was compiled can be found on <a href="https://github.com/LLewark/theta">github</a> (<a href='https://github.com/LLewark/theta/blob/master/data.csv'>data.csv</a>).
+</p>
+<p>
+You can download a csv-file of this table <a href='https://github.com/LLewark/theta/blob/master/data-invariants-only.csv'>here</a>.
+</p>
+<div class='fixHead'>
 
-<table class="sortable"><thead><tr><th>Name</th>
+<table id="invarianttable" class="sortable">
+<colgroup>
+<col class="col0">
+<col class="col1">
+<col class="col2">
+<col class="col3">
+<col class="col4">
+<col class="col5">
+<col class="col6">
+<col class="col7">
+<col class="col8">
+<col class="col9">
+<col class="col10">
+<col class="col11">
+<col class="col12">
+</colgroup>
+<thead><tr><th>Name</th>
 <th class="sorttable_numeric">pretzel</th>
 <th class="sorttable_numeric">torus</th>
 <th class="sorttable_numeric">\(\boldsymbol{\vartheta_{0}}\)</th>
@@ -16695,13 +16740,33 @@
 <th class="sorttable_numeric">\(\boldsymbol{\varepsilon}\)</th>
 <th class="sorttable_numeric">Genus-4D</th>
 </tr></thead>
+<p>
+<button id="colbutton1" type="button" onclick="toggleColumn(1)">pretzel</button>
 
-<p>
-The raw data from which this table was compiled can be found on <a href="https://github.com/LLewark/theta">github</a> (<a href='https://github.com/LLewark/theta/blob/master/data.csv'>data.csv</a>).
+<button id="colbutton2" type="button" onclick="toggleColumn(2)">torus</button>
+
+<button id="colbutton3" type="button" onclick="toggleColumn(3)">\(\boldsymbol{\vartheta_{0}}\)</button>
+
+<button id="colbutton4" type="button" onclick="toggleColumn(4)">\(\boldsymbol{\vartheta_{2}}\)</button>
+
+<button id="colbutton5" type="button" onclick="toggleColumn(5)">\(\boldsymbol{\vartheta_{3}}\)</button>
+
+<button id="colbutton6" type="button" onclick="toggleColumn(6)">\(\boldsymbol{\vartheta_{5}}\)</button>
+
+<button id="colbutton7" type="button" onclick="toggleColumn(7)">\(\boldsymbol{\vartheta_{7}}\)</button>
+
+<button id="colbutton8" type="button" onclick="toggleColumn(8)">\(\boldsymbol{s_{2}}\)</button>
+
+<button id="colbutton9" type="button" onclick="toggleColumn(9)">\(\boldsymbol{\sigma}\)</button>
+
+<button id="colbutton10" type="button" onclick="toggleColumn(10)">\(\boldsymbol{\tau}\)</button>
+
+<button id="colbutton11" type="button" onclick="toggleColumn(11)">\(\boldsymbol{\varepsilon}\)</button>
+
+<button id="colbutton12" type="button" onclick="toggleColumn(12)">Genus-4D</button>
+
 </p>
-<p>
-You can download a csv-file of this table <a href='https://github.com/LLewark/theta/blob/master/data-invariants-only.csv'>here</a>.
-</p>
+
 <tbody>
 <tr onClick="on('details-03_1')">
 <td title='click to view metadata and comments' sorttable_customkey="03_1" class="name">03_1ᶜ</td>
