@@ -1,5 +1,7 @@
 body{
-	text-align:center;
+	text-align: left;
+	margin-left:50px;
+	justify-content: center;
 }
 
 button{
@@ -10,7 +12,7 @@ button{
 
 table, th, td {
 	text-align: center;
-	margin-left: auto;
+	margin-left: 0px;
 	margin-right: auto;
 	margin-top:5px;
 	margin-bottom:5px;
@@ -31,6 +33,7 @@ table {
 }
 
 .table-metadata {
+	margin-left:10px;
   	width:80%;
 }
 

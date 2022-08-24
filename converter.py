@@ -107,6 +107,18 @@ predefined_cols = [
         "epsilon",
         "Genus-4D"]
 
+visible_cols = [
+        "name",
+        "theta_0",
+        "theta_2",
+        "theta_3",
+        "theta_2-rational",
+        "s_2",
+        "sigma",
+        "tau",
+        "epsilon",
+        "Genus-4D"]
+
 ## make sure comments do not appear as a separate column and name column is first
 for header in ["comment"]:
     if header in columns:
@@ -117,6 +129,14 @@ for header in columns:
         warnings.warn("Dataset contains the unknown invariant '" + header + "'. Adding it as the last column in the table.",UserWarning,2)
 
 columns = predefined_cols
+
+hidelist = []
+for index, col in enumerate(columns):
+    if col not in visible_cols:
+        hidelist.append(str(index))
+
+hide_list = "[" + ",".join(hidelist) + "]"
+
 
 ## compile html file
 html = """
@@ -166,6 +186,12 @@ html = """
                     col.style.visibility=\"\";
                 }
             updateColButton(col_no);
+        }
+        function toggleColumnsStart(){
+            let a = """ + hide_list + """;
+            for (let i = 0; i < a.length; i++) {
+                toggleColumn(a[i]);
+            };
         }
 </script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -255,7 +281,7 @@ def invariant_only( entry ):
     else: 
         return ""
 
-html += "<body>\n"
+html += "<body onLoad=\"toggleColumnsStart()\">\n"
 html += "<div id=\"overlay\" onclick=\"off()\" style=\"display: none;\"></div>"
 html += "<div id=\"overlay_container\" style=\"display: none;\">"
 # details as overlay
@@ -313,6 +339,7 @@ html += "</tr></thead>\n"
 
 # column selector
 html += "<p>\n"
+html += "You can choose which columns are displayed in the table by pressing the following buttons:</p>\n<p>"
 for index, col in enumerate(columns[1:]):
     html += "<button id=\"colbutton" + str(index+1) + "\" type=\"button\" onclick=\"toggleColumn(" + str(index+1) + ")\">"
     html += str2mathjax(col)

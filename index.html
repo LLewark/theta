@@ -46,12 +46,18 @@
                 }
             updateColButton(col_no);
         }
+        function toggleColumnsStart(){
+            let a = [1,2,6,7,9,10];
+            for (let i = 0; i < a.length; i++) {
+                toggleColumn(a[i]);
+            };
+        }
 </script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script src="sorttable.js"></script>
 <!--- https://www.kryogenix.org/code/browser/sorttable/ --->
 
-</head><body>
+</head><body onLoad="toggleColumnsStart()">
 <div id="overlay" onclick="off()" style="display: none;"></div><div id="overlay_container" style="display: none;"><div class="details" id="details-03_1" style='display:none'>
 <h2>03_1</h2>
 <h3>comments</h3>
@@ -18367,7 +18373,8 @@ You can download a csv-file of this table <a href='https://github.com/LLewark/th
 <th class="sorttable_numeric">Genus-4D</th>
 </tr></thead>
 <p>
-<button id="colbutton1" type="button" onclick="toggleColumn(1)">pretzel</button>
+You can choose which columns are displayed in the table by pressing the following buttons:</p>
+<p><button id="colbutton1" type="button" onclick="toggleColumn(1)">pretzel</button>
 
 <button id="colbutton2" type="button" onclick="toggleColumn(2)">torus</button>
 
