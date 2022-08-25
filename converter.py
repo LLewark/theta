@@ -101,10 +101,15 @@ predefined_cols = [
         "theta_2-rational",
         "theta_3-rational",
         "theta_5-rational",
+        "s_2(2,1-cable)",
+        "s_3(2,1-cable)",
+        "s_5(2,1-cable)",
         "s_2",
         "sigma",
         "tau",
         "epsilon",
+        "det",
+        "amphicheiral",
         "Genus-4D"]
 
 visible_cols = [
@@ -113,6 +118,7 @@ visible_cols = [
         "theta_2",
         "theta_3",
         "theta_2-rational",
+        "s_2(2,1-cable)",
         "s_2",
         "sigma",
         "tau",
