@@ -109,7 +109,7 @@ predefined_cols = [
         "tau",
         "epsilon",
         "det",
-        "amphicheiral",
+        "symmetry",
         "Genus-4D"]
 
 visible_cols = [
