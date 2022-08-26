@@ -3241,15 +3241,15 @@ T(3,11)	amphicheiral	0	reason:amphicheiral knots have s_2=0;date:25 August 2022;
 08_18	s_3(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
 08_18	s_5(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
 08_17	s_2(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
-08_17	s_2(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
-08_17	s_2(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+08_17	s_3(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+08_17	s_5(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
 08_12	s_2(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
 08_12	s_3(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
 08_12	s_5(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+08_09	s_2(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
 08_09	s_3(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
 08_09	s_5(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
-08_09	s_3(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
-08_03	s_5(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+08_03	s_2(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
 08_03	s_3(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
 08_03	s_5(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
 03_1	s_2(2,1-cable)	4	program:khoca;calculation #:143;input:braid [1,1,1]
