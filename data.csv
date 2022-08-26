@@ -3101,6 +3101,9 @@ T(3,11)	amphicheiral	0	reason:amphicheiral knots have s_2=0;date:25 August 2022;
 10_123	theta_2-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_123	theta_3-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_123	theta_5-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
+10_123	s_2(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+10_123	s_3(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+10_123	s_5(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
 10_118	theta_0	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_118	theta_2	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_118	theta_3	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
@@ -3109,6 +3112,9 @@ T(3,11)	amphicheiral	0	reason:amphicheiral knots have s_2=0;date:25 August 2022;
 10_118	theta_2-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_118	theta_3-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_118	theta_5-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
+10_118	s_2(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+10_118	s_3(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+10_118	s_5(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
 10_115	theta_0	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_115	theta_2	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_115	theta_3	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
@@ -3117,6 +3123,9 @@ T(3,11)	amphicheiral	0	reason:amphicheiral knots have s_2=0;date:25 August 2022;
 10_115	theta_2-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_115	theta_3-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_115	theta_5-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
+10_115	s_2(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+10_115	s_3(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+10_115	s_5(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
 10_109	theta_0	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_109	theta_2	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_109	theta_3	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
@@ -3125,9 +3134,15 @@ T(3,11)	amphicheiral	0	reason:amphicheiral knots have s_2=0;date:25 August 2022;
 10_109	theta_2-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_109	theta_3-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_109	theta_5-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
+10_109	s_2(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+10_109	s_3(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+10_109	s_5(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
 10_099	theta_2-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_099	theta_3-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_099	theta_5-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
+10_099	s_2(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+10_099	s_3(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+10_099	s_5(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
 10_088	theta_0	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_088	theta_2	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_088	theta_3	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
@@ -3136,6 +3151,9 @@ T(3,11)	amphicheiral	0	reason:amphicheiral knots have s_2=0;date:25 August 2022;
 10_088	theta_2-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_088	theta_3-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_088	theta_5-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
+10_088	s_2(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+10_088	s_3(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+10_088	s_5(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
 10_081	theta_0	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_081	theta_2	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_081	theta_3	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
@@ -3144,6 +3162,9 @@ T(3,11)	amphicheiral	0	reason:amphicheiral knots have s_2=0;date:25 August 2022;
 10_081	theta_2-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_081	theta_3-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_081	theta_5-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
+10_081	s_2(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+10_081	s_3(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+10_081	s_5(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
 10_079	theta_0	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_079	theta_2	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_079	theta_3	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
@@ -3152,6 +3173,9 @@ T(3,11)	amphicheiral	0	reason:amphicheiral knots have s_2=0;date:25 August 2022;
 10_079	theta_2-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_079	theta_3-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_079	theta_5-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
+10_079	s_2(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+10_079	s_3(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+10_079	s_5(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
 10_045	theta_0	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_045	theta_2	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_045	theta_3	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
@@ -3160,6 +3184,9 @@ T(3,11)	amphicheiral	0	reason:amphicheiral knots have s_2=0;date:25 August 2022;
 10_045	theta_2-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_045	theta_3-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_045	theta_5-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
+10_045	s_2(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+10_045	s_3(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+10_045	s_5(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
 10_043	theta_0	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_043	theta_2	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_043	theta_3	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
@@ -3168,6 +3195,9 @@ T(3,11)	amphicheiral	0	reason:amphicheiral knots have s_2=0;date:25 August 2022;
 10_043	theta_2-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_043	theta_3-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_043	theta_5-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
+10_043	s_2(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+10_043	s_3(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+10_043	s_5(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
 10_037	theta_0	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_037	theta_2	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_037	theta_3	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
@@ -3176,6 +3206,9 @@ T(3,11)	amphicheiral	0	reason:amphicheiral knots have s_2=0;date:25 August 2022;
 10_037	theta_2-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_037	theta_3-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_037	theta_5-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
+10_037	s_2(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+10_037	s_3(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+10_037	s_5(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
 10_033	theta_0	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_033	theta_2	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_033	theta_3	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
@@ -3184,6 +3217,9 @@ T(3,11)	amphicheiral	0	reason:amphicheiral knots have s_2=0;date:25 August 2022;
 10_033	theta_2-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_033	theta_3-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_033	theta_5-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
+10_033	s_2(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+10_033	s_3(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+10_033	s_5(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
 10_017	theta_0	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_017	theta_2	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_017	theta_3	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
@@ -3192,12 +3228,30 @@ T(3,11)	amphicheiral	0	reason:amphicheiral knots have s_2=0;date:25 August 2022;
 10_017	theta_2-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_017	theta_3-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 10_017	theta_5-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
+10_017	s_2(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+10_017	s_3(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+10_017	s_5(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
 08_18	theta_0	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 08_18	theta_5	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 08_18	theta_7	0	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 08_18	theta_2-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 08_18	theta_3-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
 08_18	theta_5-rational	1	reason:amphicheiral;date:25 August 2022;added by:Lukas Lewark
+08_18	s_2(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+08_18	s_3(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+08_18	s_5(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+08_17	s_2(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+08_17	s_2(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+08_17	s_2(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+08_12	s_2(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+08_12	s_3(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+08_12	s_5(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+08_09	s_3(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+08_09	s_5(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+08_09	s_3(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+08_03	s_5(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+08_03	s_3(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
+08_03	s_5(2,1-cable)	0	reason:amphicheiral;date:26 August 2022;added by:Lukas Lewark
 03_1	s_2(2,1-cable)	4	program:khoca;calculation #:143;input:braid [1,1,1]
 03_1	s_3(2,1-cable)	4	program:khoca;calculation #:143;input:braid [1,1,1]
 03_1	s_5(2,1-cable)	4	program:khoca;calculation #:143;input:braid [1,1,1]
