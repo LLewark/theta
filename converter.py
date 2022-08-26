@@ -176,10 +176,10 @@ html = """
             var button = document.getElementById('colbutton' + col_no);
             var col = tbl.getElementsByTagName('col')[col_no];
                 if (col.style.visibility==\"\"){
-                    button.style.backgroundColor=\"GreenYellow\";
+                    button.style.backgroundColor=\"#A3E0A3\";
                 }
                 else {
-                    button.style.backgroundColor=\"LightPink\";
+                    button.style.backgroundColor=\"#E0A3A3\";
                 }
         }
         function toggleColumn(col_no) {
@@ -203,8 +203,18 @@ html = """
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script src="sorttable.js"></script>
 <!--- https://www.kryogenix.org/code/browser/sorttable/ --->
-
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>"""
+
+def str2unicode( string ):
+    string = sub(r"theta",r"ϑ", string)
+    string = sub(r"epsilon",r"ε", string)
+    string = sub(r"sigma",r"σ", string)
+    string = sub(r"tau",r"τ", string)
+    string = sub(r"name","Name", string )
+    string = sub(r"comment","Comment", string )
+    string = sub(r"rational","rat", string )
+    return string
 
 def str2mathjax( string ):
     string = sub(r"theta_([0-9]*)",r"\\(\\boldsymbol{\\vartheta_{\1}}\\)", string)
@@ -303,33 +313,95 @@ for knot in database:
     for col in columns:
         entry = knot.get( col )
         if etype(entry) == 2:
-            html += "<h4>" + str2mathjax(col) + "= <span class='invariant-missing'>X</span></h4>\n"
+            html += "<h4>" + str2unicode(col) + "= <span class='invariant-missing'>X</span></h4>\n"
             for e in entry[1]:
                 html += format_metadata(e) + "\n"
         if etype(entry) == 3:
-            html += "<h4>" + str2mathjax(col) + "=" + entry[0] + "</h4>\n"
+            html += "<h4>" + str2unicode(col) + "=" + entry[0] + "</h4>\n"
             for e in entry[1]:
                 html += format_metadata(e) + "\n"
     html += "</div>\n"
 html += "</div>\n\n"
 
-# page title
-html += "<h1>Table of \(\\boldsymbol{\\vartheta_c}\)-invariants</h1>"
+# add warning if neccessary
 if warning_count != 0:
     html += "<span style=\"color:red\">Warning! There were warnings when this file was generated! Please fix and compile again.</span>"
 
 # some info text
 html += """
+<div id='icons'>
+
+<span class="icon">
+<a href='https://arxiv.org/abs/2208.?????'>
+<i class="fa fa-file-text"></i>
+preprint
+</a>
+</span>
+
+<span class="icon">
+<a href='https://github.com/LLewark/theta/blob/master/""" + filename.split(".")[0] + """-invariants-only.csv'>
+<i class="fa fa-table"></i>
+csv-file
+</a>
+</span>
+
+<span class="icon">
+<a href="https://github.com/LLewark/theta">
+<i class="fa fa-github"></i>
+github
+</a>
+</span>
+
+<span class="icon">
+<a href='https://github.com/LLewark/theta/blob/master/""" + filename + """'>
+<i class="fa fa-code"></i>
+raw data
+</a>
+</span>
+
+</div>
+
+<hr>
+
 <p>
-The raw data from which this table was compiled can be found on <a href="https://github.com/LLewark/theta">github</a> (<a href='https://github.com/LLewark/theta/blob/master/""" + filename + "'>" + filename + """</a>).
+This website supplements the preprint
+<div id="paper">
+    <b>
+        Rasmussen invariants of Whitehead doubles and other satellites
+    </b><br>
+    by L. Lewark and C. Zibrowius
+</div>
+
+For any c equal to a prime number or 0, the paper defines certain knot invariants \(\\vartheta_c\) that govern the behaviour of the Rasmussen invariants \(s_c\) over fields of characteristic \(c\) under satellite operations with patterns of wrapping number 2.
+</p>
+
+<h2>Table of \(\\boldsymbol{\\vartheta_c}\)-invariants</h2>
+"""
+
+# column selector
+html += "<p>\n"
+for index, col in enumerate(columns[1:]):
+    html += "<button id=\"colbutton" + str(index+1) + "\" type=\"button\" onclick=\"toggleColumn(" + str(index+1) + ")\">"
+    html += str2mathjax(col)
+    html += "</button>\n\n"
+html += "</p>\n"
+
+# more helpful instructions
+html += """
+<p>
+Use the buttons above to select which columns are included in the table below.
 </p>
 <p>
-You can download a csv-file of this table <a href='https://github.com/LLewark/theta/blob/master/""" + filename.split(".")[0] + """-invariants-only.csv'>here</a>.
+Click on a row to display the metadata for the invariants in that row.
+</p>
+<p>
+Click on the column header to sort the table by the values in that column.
 </p>
 """
 
 # table head
-html += "<div class='fixHead'>\n\n"
+html += "\n\n<div id='tablecontainer'>\n"
+html += "<div class='fixHead'>\n"
 html +="<table id=\"invarianttable\" class=\"sortable\">\n"
 html +="<colgroup>\n"
 for index,col in enumerate(columns):
@@ -342,15 +414,6 @@ for col in columns:
     else:
         html += "<th class=\"sorttable_numeric\">" + str2mathjax(col) + "</th>\n" 
 html += "</tr></thead>\n"
-
-# column selector
-html += "<p>\n"
-html += "You can choose which columns are displayed in the table by pressing the following buttons:</p>\n<p>"
-for index, col in enumerate(columns[1:]):
-    html += "<button id=\"colbutton" + str(index+1) + "\" type=\"button\" onclick=\"toggleColumn(" + str(index+1) + ")\">"
-    html += str2mathjax(col)
-    html += "</button>\n\n"
-html += "</p>\n\n"
 
 csv_output = open(filename.split(".")[0] + '-invariants-only.csv', 'w')
 writer = csv.writer(csv_output)
@@ -370,6 +433,7 @@ for knot in database:
     html += "</tr>\n\n\n\n"
 html += "</tbody>\n"
 html += "</table>\n"
+html += "</div>\n"
 html += "</div>\n"
 html += "</body>\n"
 
