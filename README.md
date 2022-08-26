@@ -12,7 +12,7 @@ We collect all known ϑ<sub>c</sub>-invariants in the following table (`index.ht
 
 ## What are the other files for?
 
-The table is generated from the source file `data.csv` by running the script `conterter.py`:
+The table is generated from the source file `data.csv` by running the script `converter.py`:
 
     ./converter.py data.csv > index.html
 
