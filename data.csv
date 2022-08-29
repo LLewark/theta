@@ -3420,3 +3420,7 @@ T(3,11)	amphicheiral	0	reason:amphicheiral knots have s_2=0;date:25 August 2022;
 08_14	s_2(2,1-cable)	4	program:khoca;calculation #:143;input:braid [1,1,1,2,-1,2,-3,2,-3]
 08_14	s_3(2,1-cable)	4	program:khoca;calculation #:143;input:braid [1,1,1,2,-1,2,-3,2,-3]
 08_14	s_5(2,1-cable)	4	program:khoca;calculation #:143;input:braid [1,1,1,2,-1,2,-3,2,-3]
+08_19	s_2(2,1-cable)	12	program:khoca;calculation #:144;input:braid [1,2,1,2,1,2,1,2]
+08_19	s_3(2,1-cable)	12	program:khoca;calculation #:144;input:braid [1,2,1,2,1,2,1,2]
+10_125	s_2(2,1-cable)	-4	program:khoca;calculation #:145;input:braid [1,1,1,1,1,-2,-1,-1,-1,-2]
+10_125	s_3(2,1-cable)	-4	program:khoca;calculation #:145;input:braid [1,1,1,1,1,-2,-1,-1,-1,-2]
