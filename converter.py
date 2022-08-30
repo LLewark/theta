@@ -332,7 +332,7 @@ html += """
 <div id='icons'>
 
 <span class="icon">
-<a href='https://arxiv.org/abs/2208.?????'>
+<a href='https://arxiv.org/abs/2208.13612'>
 <i class="fa fa-file-text"></i>
 preprint
 </a>

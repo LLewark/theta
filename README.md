@@ -2,7 +2,7 @@
 
 This repository supplements the paper
 
-> L. Lewark and C. Zibrowius, _Rasmussen invariants of Whitehead doubles and other satellites_
+> L. Lewark and C. Zibrowius, [_Rasmussen invariants of Whitehead doubles and other satellites_](https://arxiv.org/abs/2208.13612)
 
 For any c equal to a prime number or 0, the paper defines certain knot invariants ϑ<sub>c</sub> that govern the behaviour of Rasmussen invariants over fields of characteristic c under satellite operations with patterns of winding number 0 and wrapping number 2.  
 
