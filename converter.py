@@ -109,6 +109,7 @@ predefined_cols = [
         "tau",
         "epsilon",
         "det",
+        "2bridge",
         "amphicheiral",
         "Genus-4D"]
 
