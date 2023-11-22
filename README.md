@@ -47,3 +47,7 @@ The values of some other invariants, such as the τ invariant and the slice genu
 > C. Livingston and A. H. Moore, [_KnotInfo_: Table of Knot Invariants](https://knotinfo.math.indiana.edu) 
 
 For the source of any value, please check the metadata by clicking on the corresponding row of the table.
+
+## Acknowledgments
+
+While working on this repository in 2022, Lukas Lewark and Claudius Zibrowius were supported by the Emmy Noether Programme of the DFG, project number 412851057.
