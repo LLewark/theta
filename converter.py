@@ -111,7 +111,8 @@ predefined_cols = [
         "det",
         "2bridge",
         "amphicheiral",
-        "Genus-4D"]
+        "Genus-4D",
+        "Genus-3D"]
 
 visible_cols = [
         "name",
